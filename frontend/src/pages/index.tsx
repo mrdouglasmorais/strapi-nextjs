@@ -1,3 +1,4 @@
+import { GetStaticProps } from "next";
 import React from "react";
 import Articles from "../components/articles";
 import Layout from "../components/layout";
@@ -18,8 +19,7 @@ const Home = ({ articles, categories, homepage }) => {
   );
 };
 
-export async function getStaticProps() {
-  // Run API calls in parallel
+export const getStaticProps: GetStaticProps = async () => {
   const [articles, categories, homepage] = await Promise.all([
     fetchAPI("/articles?status=published"),
     fetchAPI("/categories"),

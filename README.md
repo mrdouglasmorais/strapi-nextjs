@@ -19,21 +19,19 @@ Páginas:
 - "/article/:id" para exibir um artigo
 - "/categoria/:id" exibe artigos dependendo da categoria
 
-## Getting started
+## Iniciando
 
 A maneira mais fácil de experimentar este iniciador é executá-lo localmente em seu computador.
-
-First, you'll need to create your own copy of this starter. You can do so by clicking [the "Use this template" button](https://github.com/strapi/strapi-starter-next-blog/generate) on GitHub, and filling the [form](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
 
 ### Backend
 
 Crie um projeto Strapi chamado `backend` usando o [blog template](https://github.com/strapi/strapi-template-blog):
 
 ```
-# Using Yarn
+# Usando Yarn
 yarn create strapi-app backend --template https://github.com/strapi/strapi-template-blog
 
-# Com o NPX
+# Usando NPX
 npx create-strapi-app backend --template https://github.com/strapi/strapi-template-blog
 ```
 
@@ -62,5 +60,7 @@ yarn develop
 Crie um arquivo para varivel de ambiente  `touch .env.local`
 
 Servidor next => [http://localhost:3000](http://localhost:3000)
+
+Por Douglas Morais
 
 Bora codar!

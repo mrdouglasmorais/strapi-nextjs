@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from 'next/image'
 
 const Nav = ({ categories }) => {
   return (
@@ -9,14 +10,20 @@ const Nav = ({ categories }) => {
           <ul className="uk-navbar-nav">
             <li>
               <Link href="/">
-                <a>Gama Blog</a>
+                <a>
+                  <Image
+                      src="/img/gama.png"
+                      width={350}
+                      height={80}
+                  />
+                </a>
               </Link>
             </li>
           </ul>
         </div>
         <div className="uk-navbar-right">
           <ul className="uk-navbar-nav">
-            {categories.map((category) => {
+            {categories.map( category => {
               return (
                 <li key={category.id}>
                   <Link as={`/category/${category.slug}`} href="/category/[id]">
