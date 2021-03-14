@@ -1,70 +1,66 @@
-# Strapi Starter Next Blog
+# Blog Gama Academy NEXTJS | Strapi
 
-Next starter for creating a blog with Strapi.
+Iniciando com strapi.
 
 ![screenshot image](/screenshot.png)
 
-This starter allows you to try Strapi with Next with the example of a simple blog. It is fully customizable and due to the fact that it is open source, fully open to contributions. So do not hesitate to add new features and report bugs!
+Este iniciador permite que você experimente o Strapi com o Next com o exemplo de um blog simples. É totalmente personalizável e devido ao fato de ser open source, totalmente aberto a contribuições. Portanto, não hesite em adicionar novos recursos e relatar bugs!
 
 ## Features
 
-- 2 Content types: Article, Category
-- 2 Created articles
-- 3 Created categories
-- Responsive design using UIkit
+- 2 tipos de conteúdo: Artigo, Categoria
+- 2 artigos criados
+- 3 categorias criadas
+- Design responsivo usando UIkit
 
-Pages:
+Páginas:
 
-- "/" to display every articles
-- "/article/:id" to display one article
-- "/category/:id" display articles depending on the category
+- "/" para exibir todos os artigos
+- "/article/:id" para exibir um artigo
+- "/categoria/:id" exibe artigos dependendo da categoria
 
 ## Getting started
 
-The easiest way to try this starter is to run it locally on your computer.
+A maneira mais fácil de experimentar este iniciador é executá-lo localmente em seu computador.
 
 First, you'll need to create your own copy of this starter. You can do so by clicking [the "Use this template" button](https://github.com/strapi/strapi-starter-next-blog/generate) on GitHub, and filling the [form](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
 
 ### Backend
 
-Create a Strapi project named `backend` using the [blog template](https://github.com/strapi/strapi-template-blog):
+Crie um projeto Strapi chamado `backend` usando o [blog template](https://github.com/strapi/strapi-template-blog):
 
 ```
 # Using Yarn
 yarn create strapi-app backend --template https://github.com/strapi/strapi-template-blog
 
-# Or using NPM
+# Com o NPX
 npx create-strapi-app backend --template https://github.com/strapi/strapi-template-blog
 ```
 
-The Strapi server will automatically start and import sample seed data.
+O servidor Strapi iniciará automaticamente e importará dados do template.
 
 ### Frontend
 
-Leave the Strapi backend running in the background. Open another terminal tab, and make sure you're in the `frontend` directory:
+Deixe o back-end do Strapi em execução em segundo plano. Abra outra guia de terminal e verifique se você está no diretório `frontend`
 
 ```bash
 cd frontend
 ```
 
-Install dependencies and start the Next.js server:
+Para instalar as dependiencias do NextJS:
 
 ```bash
 # Using yarn
-yarn install
+yarn
 yarn develop
 
-# Using npm
-npm install
-npm run develop
+# Using yarn
+yarn install
+yarn develop
 ```
 
-If you want to change the default environment variables, create a `.env.local` file like this:
+Crie um arquivo para varivel de ambiente  `touch .env.local`
 
-```
-cp .env.local.example .env.local
-```
+Servidor next => [http://localhost:3000](http://localhost:3000)
 
-Next server is running here => [http://localhost:3000](http://localhost:3000)
-
-Enjoy this starter!
+Bora codar!
