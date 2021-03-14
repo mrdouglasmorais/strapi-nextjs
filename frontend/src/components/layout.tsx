@@ -1,6 +1,6 @@
-import Nav from "./nav";
+import Nav from "@/components/nav";
 
-const Layout = ({ children, categories, seo }) => (
+const Layout = ({ children, categories, seo }: any) => (
   <>
     <Nav categories={categories} />
     {children}

@@ -1,8 +1,7 @@
-import React from "react";
 import Link from "next/link";
-import Image from "./image";
+import Image from "@/components/image";
 
-const Card = ({ article }) => {
+const Card = ({ article }: any) => {
   return (
     <Link as={`/article/${article.slug}`} href="/article/[id]">
       <a className="uk-link-reset">

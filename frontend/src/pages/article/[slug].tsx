@@ -1,12 +1,12 @@
 import ReactMarkdown from "react-markdown";
 import Moment from "react-moment";
-import { fetchAPI } from "../../lib/api";
-import Layout from "../../components/layout";
-import Image from "../../components/image";
-import Seo from "../../components/seo";
-import { getStrapiMedia } from "../../lib/media";
+import { fetchAPI } from "@/lib/api";
+import Layout from "@/components/layout";
+import Image from "@/components/image";
+import Seo from "@/components/seo";
+import { getStrapiMedia } from "@/lib/media";
 
-const Article = ({ article, categories }) => {
+const Article = ({ article, categories }: any) => {
   const imageUrl = getStrapiMedia(article.image);
 
   const seo = {
@@ -64,7 +64,7 @@ export async function getStaticPaths() {
   const articles = await fetchAPI("/articles");
 
   return {
-    paths: articles.map((article) => ({
+    paths: articles.map((article: any) => ({
       params: {
         slug: article.slug,
       },

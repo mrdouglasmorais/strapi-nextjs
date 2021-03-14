@@ -1,5 +1,4 @@
-import React from "react";
-import Card from "./card";
+import Card from "@/components/card";
 
 const Articles = ({ articles }) => {
   const leftArticlesCount = Math.ceil(articles.length / 5);
